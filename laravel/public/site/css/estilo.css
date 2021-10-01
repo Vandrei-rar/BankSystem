@@ -635,6 +635,85 @@ a:hover {
   background: var(--primary);
 }
 
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: rgb(20, 20, 20) !important;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row{
+background: rgb(26, 26, 26);
+border-radius: 30px;
+box-shadow: 12px 12px 22px #da9323;
+}
+
+img{
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+.btn1{
+border: none;
+outline: none;
+height: 50px;
+width: 100%;
+background-color: #EBC638;
+color: black;
+border-radius: 4px;
+font-weight: bold;
+}
+
+.btn1:hover{
+transition: 0.5s;
+transform: scale(1.1);
+background-color: #ff9900;
+}
+
+.btn1:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+.btn1:focus {
+background-color: #918d7e;
+transition: 0.5s;
+transform: scale(1.5);
+border: 0;
+outline: 0;
+}
+
+input#inputp {
+color: white;
+padding-left: 20px;
+margin-top: 20px;
+float: center;
+width: 100%;
+height: 45px;
+background-color: rgb(20, 20, 20);
+border: 0;
+border-radius: 5px;
+}
+input#inputp:hover{
+transition: 0.5s;
+transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+input#inputp:focus{
+outline: 0;
+padding-left: 30px;
+transform: scale(1.1);
+border: 2px solid #EBC638;
+}
 
 /* Magnific Popup CSS */
 .mfp-bg {
@@ -1062,218 +1141,85 @@ q������V�jjJ�� ��bIOO�G�MԌ�2�����!�
 |����&T��XԴ��Ɵ��� ŴYB��333_>|�KJ�2����Z����P���%�&d�h-PS˲zh�].���8PJ�RB�~�7�G�3AL��\�v�(h�C���^���|�5� 8!��?����B�"�⾍��}5,Y.x��?Z#�j ��"U�����J��
 ح����4�cǎ�;&&�\���)�֔-�_�ba��D�&�;�\O�5j\ppp����`k��i�ګ���K�ѣGU`�1��ٔl�Ջ������qo��&��n���~QQQ�à������uuu�Kd�L&s�Lxb����z��d#XM�%���ϫw��U��h��F����#���Z���Y^��?����~+&��`m�U�ݶi8@![�;X���f%��S@r�a�Z�'� ���୬��    IEND�B`�
 *{
-    padding: 0;
-    border: 0;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
-@media (max-width:1000px){
-    div#elemento2 {
-        display: none;
-        visibility: hidden;
-    }
-    body{
-        height: 300px;
-    }
+body{
+background: rgb(20, 20, 20);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
-
-/* Logo */
-
-.logo{
-    cursor: pointer;
+.row{
+background: rgb(26, 26, 26);
+border-radius: 30px;
+box-shadow: 12px 12px 22px #da9323;
 }
 
-/* --------- */
-
-/* Escritas NavBar 
-
-.home::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #EBC638;
-    transition: width .3s;
+img{
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
 }
 
-.home:hover::after{
-    width: 100%;
-    transition: width .3s;
+.btn1{
+border: none;
+outline: none;
+height: 50px;
+width: 100%;
+background-color: #EBC638;
+color: black;
+border-radius: 4px;
+font-weight: bold;
 }
 
-/* Cabeçalho 
-
-
-.banner{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+.btn1:hover{
+transition: 0.5s;
+transform: scale(1.1);
+background-color: #ff9900;
 }
 
-.navbar{
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn1:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
 }
 
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    font-size: 12px;
-    cursor: pointer;
-    color: #ffff;
-}
- /* -------- */
-body {
-    background-image: url(./image/fundo\ galaxy.jpg);
-    width: 100%;
-    height: 10%;
-    background-color: rgb(22, 22, 22);
-    color: white;
-}
-
-div#elemento { 
-    overflow: hidden;
-    padding: 50px;
-    margin-top: 10%;
-    display: inline-block;
-    width: 500px;
-    height: 800px;
-    border-radius: 20px;
-    background-color: rgb(14, 14, 14);
-}
-
-h3#crie{
-    margin-top: 20px;
-    text-align: left;
+.btn1:focus {
+background-color: #918d7e;
+transition: 0.5s;
+transform: scale(1.5);
+border: 0;
+outline: 0;
 }
 
 input#inputp {
-    color: white;
-    padding-left: 20px;
-    margin-top: 20px;
-    float: center;
-    width: 100%;
-    height: 45px;
-    background-color: rgb(20, 20, 20);
-    border: 0;
-    border-radius: 5px;
+color: white;
+padding-left: 20px;
+margin-top: 20px;
+float: center;
+width: 100%;
+height: 45px;
+background-color: rgb(20, 20, 20);
+border: 0;
+border-radius: 5px;
 }
-
 input#inputp:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
+transition: 0.5s;
+transform: scale(1.1);
 }
 
 input#inputp:not(:hover){
-    transition: 0.5s;
-    transform: scale(1.0);
+transition: 0.5s;
+transform: scale(1.0);
 }
 
 input#inputp:focus{
-    outline: 0;
-    padding-left: 30px;
-    transform: scale(1.1);
-    border: 2px solid #EBC638;
+outline: 0;
+padding-left: 30px;
+transform: scale(1.1);
+border: 2px solid #EBC638;
 }
 
-/* Botão 1 */
-button {
-    margin-top: 4%;
-    width: 250px;
-    height: 40px;
-    color: white;
-    background-color: #EBC638;
-    border: 0;
-    border-radius: 5px;
-}
-
-button:hover{
-    transition: 0.5s;
-    transform: scale(1.2);
-    background-color: #ff9900;
-}
-
-button:not(:hover){
-    transition: 0.5s;
-    transform: scale(1.0);
-}
-
-button:focus {
-    background-color: #918d7e;
-    transition: 0.5s;
-    transform: scale(1.2);
-    border: 0;
-    outline: 0;
-}
-/* ------- */
-
-
-/* Botão 2 */
-
-#cadastro2 {
-    margin-top: 4%;
-    width: 250px;
-    height: 40px;
-    color: white;
-    background-color: #c73535c9;
-    border: 0;
-    border-radius: 5px;
-}
-
-#cadastro2:hover{
-    transition: 0.5s;
-    transform: scale(1.2);
-    background-color: #aa1c1cc9;
-}
-
-#cadastro2:not(:hover){
-    transition: 0.5s;
-    transform: scale(1.0);
-}
-
-#cadastro2:focus {
-    background-color: #918d7e;
-    transition: 0.5s;
-    transform: scale(1.2);
-    border: 0;
-    outline: 0;
-}
-
-
-/* ------- */
-
-.center {
-    margin-top: 160px;
-}
-
-@keyframes moveToLeft {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-.Ajuste{
-    padding: 20px;
-    text-align: left;
-}
 /* MIN WIDTH */
 @media (min-width: 992px) {
   #header .nav-link {

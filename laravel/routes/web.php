@@ -19,4 +19,12 @@ Route::get('/abrirconta', function() {
 
 Route::get('/', function(){
     return view('site.index');
-})->name('index');
+})->name('index'); //Não usado no momento
+
+Route::get('/login', function(){
+    return view('site.login');
+})->name('login');
+
+Route::get('/recuperarsenha', function(){
+    return view('site.recuperarsenha');
+})->name('recuperarsenha');

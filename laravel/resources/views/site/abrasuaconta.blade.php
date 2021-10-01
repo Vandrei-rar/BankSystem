@@ -30,9 +30,9 @@
             <input type="text" id="inputp" placeholder="Endereço">
             <input type="password" id="inputp" placeholder="Senha">
             <a href="#">
-            <button id="cadastro"><span style="color: black;">Abrir conta</span></button></a>  
-            <a href="login.html">
-            <button id="cadastro"><span style="color: black;">Logar</span></button></a>
+            <button id="cadastro"><span style="color: black;">Abrir conta</span></button></a>
+            <a href="{{ route('login') }}">
+            <button id="cadastro"><span style="color: black;">Voltar para o login</span></button></a>
             <p id="sucesso"></p>
         </div>
 
@@ -42,7 +42,6 @@
             </div>
         </div>
     </div>
-    <script src="/laravel/public/site/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
