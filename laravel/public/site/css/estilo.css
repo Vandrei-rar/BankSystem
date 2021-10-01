@@ -1,0 +1,1398 @@
+*{
+    padding: 0;
+    border: 0;
+}
+
+@media (max-width:1000px){
+    div#elemento2 {
+        display: none;
+        visibility: hidden;
+    }
+    body{
+        height: 300px;
+    }
+}
+
+
+
+
+/* Logo */
+
+.logo{
+    cursor: pointer;
+}
+
+/* --------- */
+
+/* Escritas NavBar 
+
+.home::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #EBC638;
+    transition: width .3s;
+}
+
+.home:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Cabeçalho 
+
+
+.banner{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffff;
+}
+ /* -------- */
+body {
+    background-image: url(./image/fundo\ galaxy.jpg);
+    width: 100%;
+    height: 10%;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    animation-name: moveToLeft;
+    animation-duration: 2.0s;
+}
+
+div#elemento { 
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: rgb(14, 14, 14);
+}
+
+div#elemento2 {
+    overflow: hidden;
+    padding: 100px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: #da9323;
+}
+
+h3#crie{
+    margin-top: 20px;
+    text-align: left;
+}
+
+input#inputp {
+    color: white;
+    padding-left: 20px;
+    margin-top: 20px;
+    float: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(20, 20, 20);
+    border: 0;
+    border-radius: 5px;
+}
+
+input#inputp:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+input#inputp:focus{
+    outline: 0;
+    padding-left: 30px;
+    transform: scale(1.1);
+    border: 2px solid #EBC638;
+}
+
+
+button {
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: #EBC638;
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: #ff9900;
+}
+
+button:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+button:focus {
+    background-color: #918d7e;
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: 0;
+    outline: 0;
+}
+
+.center {
+    margin-top: 160px;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+:root {
+  --primary: #da9323;
+  --primary-dark: #f83771;
+  --secondary: #131313;
+  --light: #f0f0f0;
+  --medium: #cacaca;
+  --dark: #a2a2a2;
+}
+
+
+/*
+
+Cadastro:
+Tópicos:
+Nome
+Sobrenome
+Data 
+Nasc 
+Cpf 
+Rg 
+Endereço
+Senha
+
+
+
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/*body{
+  
+}*/
+
+#header {
+  width: 100%;
+  background-color: #131313;
+  transition: background ease-out 0.2s;
+}
+
+#header.active {
+  position: fixed;
+  background:#131313;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+#header .navbar-collapse {
+  width: auto;
+}
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  border-bottom: solid 4px transparent;
+}
+/*
+#header .nav-link:hover {
+  border-bottom: solid 4px var(--light);
+  color: var(--light);
+}
+*/
+
+#ola{
+
+}
+#slider h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#slider h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.menina-medio{
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+#section-fundamental{
+
+ border-top: 3px dotted grey;
+
+
+}
+
+#servicos a.destaque {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+#servicos p {
+  color: var(--dark);
+}
+
+#servicos a.destaque .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+  max-height: 160px;
+}
+
+#clientes a.link-cliente {
+  padding: 0 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--light);
+  height: 100px;
+  transition: ease-out all 0.2s;
+}
+
+#clientes a.link-cliente:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clientes a.link-cliente img {
+  filter: grayscale(100%);
+  max-height: 70px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#clientes a.link-cliente:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+#clientes .cliente-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+#clientes .cliente-texto .imagem {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#clientes .cliente-texto .imagem span {
+  color: var(--secondary);
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+#clientes .cliente-texto .telefone {
+  display: flex;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+#clientes .cliente-texto .telefone span {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
+
+#servicos .badge {
+  font-weight: 400;
+}
+
+#servicos .element-item img {
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group {
+  margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#servicos .button-group button + button {
+  margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+  color: var(--primary);
+}
+
+#depoimentos .depoimento {
+  background-color: var(--light);
+  border-radius: 5px;
+  display: flex;
+  padding: 30px;
+}
+
+#depoimentos .depoimento .quote {
+  max-width: 35px;
+}
+
+#depoimentos .depoimento .name {
+  color: #aaaaaa;
+}
+
+#depoimentos .depoimento .name span {
+  color: #000;
+  font-weight: 700;
+}
+
+#contato .email {
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contato .email img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contato .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+  background: none;
+  color: rgb(255, 255, 255);
+}
+
+#contato ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child {
+  margin-left: 0;
+}
+
+#contato ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+}
+
+#contato ul li img {
+  max-height: 32px;
+}
+
+.carousel-segundario{
+  max-width: 550px;
+  max-height: 412px;
+}
+
+.accordion {
+  transition: 0.4s;
+}
+
+.accordion {
+  transition: 0.4s;
+}
+
+.ativ, .accordion:hover {
+}
+
+.accordion:after {
+
+}
+
+.ativ:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.divisor{
+
+}
+
+.espiral{
+  height: 50px;
+  margin-top: -50px;
+}
+
+.infra{
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: #fff;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: var(--medium);
+  font-weight: 400;
+}
+
+.block1 {
+  margin-bottom: 25px;
+  background-color: #6f4da3 !important;
+}
+
+.block2{
+  margin-bottom: 25px;
+  background-color: #30ccdc !important;
+}
+
+.block{ 
+  margin-top: 100px;
+}
+
+
+.button {
+  text-transform: lowercase;
+  font-weight: 500;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+.button-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.button-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.button-primary-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.button-primary-outline:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary);
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: rgb(20, 20, 20) !important;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row{
+background: rgb(26, 26, 26);
+border-radius: 30px;
+box-shadow: 12px 12px 22px #da9323;
+}
+
+img{
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+.btn1{
+border: none;
+outline: none;
+height: 50px;
+width: 100%;
+background-color: #EBC638;
+color: black;
+border-radius: 4px;
+font-weight: bold;
+}
+
+.btn1:hover{
+transition: 0.5s;
+transform: scale(1.1);
+background-color: #ff9900;
+}
+
+.btn1:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+.btn1:focus {
+background-color: #918d7e;
+transition: 0.5s;
+transform: scale(1.5);
+border: 0;
+outline: 0;
+}
+
+input#inputp {
+color: white;
+padding-left: 20px;
+margin-top: 20px;
+float: center;
+width: 100%;
+height: 45px;
+background-color: rgb(20, 20, 20);
+border: 0;
+border-radius: 5px;
+}
+input#inputp:hover{
+transition: 0.5s;
+transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+input#inputp:focus{
+outline: 0;
+padding-left: 30px;
+transform: scale(1.1);
+border: 2px solid #EBC638;
+}
+
+/* Magnific Popup CSS */
+.mfp-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.8; }
+
+.mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  position: fixed;
+  outline: none !important;
+  -webkit-backface-visibility: hidden; }
+
+.mfp-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  box-sizing: border-box; }
+
+.mfp-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.mfp-align-top .mfp-container:before {
+  display: none; }
+
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045; }
+
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: 100%;
+  cursor: auto; }
+
+.mfp-ajax-cur {
+  cursor: progress; }
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
+
+.mfp-zoom {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; }
+
+.mfp-auto-cursor .mfp-content {
+  cursor: auto; }
+
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.mfp-loading.mfp-figure {
+  display: none; }
+
+.mfp-hide {
+  display: none !important; }
+
+.mfp-preloader {
+  color: #CCC;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  margin-top: -0.8em;
+  left: 8px;
+  right: 8px;
+  z-index: 1044; }
+  .mfp-preloader a {
+    color: #CCC; }
+    .mfp-preloader a:hover {
+      color: #FFF; }
+
+.mfp-s-ready .mfp-preloader {
+  display: none; }
+
+.mfp-s-error .mfp-content {
+  display: none; }
+
+button.mfp-close,
+button.mfp-arrow {
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: none;
+  padding: 0;
+  z-index: 1046;
+  box-shadow: none;
+  touch-action: manipulation; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.mfp-close {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace; }
+  .mfp-close:hover,
+  .mfp-close:focus {
+    opacity: 1; }
+  .mfp-close:active {
+    top: 1px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #333; }
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  color: #FFF;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%; }
+
+.mfp-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #CCC;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap; }
+
+.mfp-arrow {
+  position: absolute;
+  opacity: 0.65;
+  margin: 0;
+  top: 50%;
+  margin-top: -55px;
+  padding: 0;
+  width: 90px;
+  height: 110px;
+  -webkit-tap-highlight-color: transparent; }
+  .mfp-arrow:active {
+    margin-top: -54px; }
+  .mfp-arrow:hover,
+  .mfp-arrow:focus {
+    opacity: 1; }
+  .mfp-arrow:before,
+  .mfp-arrow:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: medium inset transparent; }
+  .mfp-arrow:after {
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+    top: 8px; }
+  .mfp-arrow:before {
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+    opacity: 0.7; }
+
+.mfp-arrow-left {
+  left: 0; }
+  .mfp-arrow-left:after {
+    border-right: 17px solid #FFF;
+    margin-left: 31px; }
+  .mfp-arrow-left:before {
+    margin-left: 25px;
+    border-right: 27px solid #3F3F3F; }
+
+.mfp-arrow-right {
+  right: 0; }
+  .mfp-arrow-right:after {
+    border-left: 17px solid #FFF;
+    margin-left: 39px; }
+  .mfp-arrow-right:before {
+    border-left: 27px solid #3F3F3F; }
+
+.mfp-iframe-holder {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 900px; }
+  .mfp-iframe-holder .mfp-close {
+    top: -40px; }
+
+.mfp-iframe-scaler {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  .mfp-iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #000; }
+
+/* Main image in popup */
+img.mfp-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 40px 0 40px;
+  margin: 0 auto; }
+
+/* The shadow behind the image */
+.mfp-figure {
+  line-height: 0; }
+  .mfp-figure:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #444; }
+  .mfp-figure small {
+    color: #BDBDBD;
+    display: block;
+    font-size: 12px;
+    line-height: 14px; }
+  .mfp-figure figure {
+    margin: 0; }
+
+.mfp-bottom-bar {
+  margin-top: -36px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: auto; }
+
+.mfp-title {
+  text-align: left;
+  line-height: 18px;
+  color: #F3F3F3;
+  word-wrap: break-word;
+  padding-right: 36px; }
+
+.mfp-image-holder .mfp-content {
+  max-width: 100%; }
+
+.mfp-gallery .mfp-image-holder .mfp-figure {
+  cursor: pointer; }
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
+  .mfp-img-mobile .mfp-image-holder {
+    padding-left: 0;
+    padding-right: 0; }
+  .mfp-img-mobile img.mfp-img {
+    padding: 0; }
+  .mfp-img-mobile .mfp-figure:after {
+    top: 0;
+    bottom: 0; }
+  .mfp-img-mobile .mfp-figure small {
+    display: inline;
+    margin-left: 5px; }
+  .mfp-img-mobile .mfp-bottom-bar {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    margin: 0;
+    top: auto;
+    padding: 3px 5px;
+    position: fixed;
+    box-sizing: border-box; }
+    .mfp-img-mobile .mfp-bottom-bar:empty {
+      padding: 0; }
+  .mfp-img-mobile .mfp-counter {
+    right: 5px;
+    top: 3px; }
+  .mfp-img-mobile .mfp-close {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    text-align: center;
+    padding: 0; } }
+
+@media all and (max-width: 900px) {
+  .mfp-arrow {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); }
+  .mfp-arrow-left {
+    -webkit-transform-origin: 0;
+    transform-origin: 0; }
+  .mfp-arrow-right {
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%; }
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+@import url(./bootstrap.min.css);
+@import url(./config.css);
+@import url(./global.css);
+@import url(./custom.css);
+@import url(./responsive.css);
+
+GIF89a    �  �����������������լ�������������⢢����         !�NETSCAPE2.0   !�Created with ajaxload.info !�	
+   ,         ��Iia����bK�$�F�RA�T�,�2S�*05//�m�p!z���0;$�0C�.I*!�HC(A@o�!39T5�\�8)���`�dwxG=Y
+g�wHb�vA=�0	V\�\�;	����;���H��������0��t%�Hs��rY<H.�ŉ��	��b�Zb�OEg:�GY].�=�A�OQ�s�� �\b�h.9�=sg��c��e��*�ֆf 7D  !�	
+   ,         ��IiY��ͧYF5�F�ԢRÔTbG�J����L��d��&�Ymx莔� \@����� �1�&R���H
+41Q��|V%zv#j0�
+�l�Gg{0~�<�<	�[�[�h�x��G�
+y���������[�0���G����P�z��hɾ�Ękz�i��y����h|z�h�G݄�VŢ��� ���\h�[��� Ǥ���&�+��W�7�8��! !�	
+   ,         ��I)1����1G5d]�(��Rǲ�T2��jL�{��< [�5�M��
+0�)�
+ L��I��m��E��`�p�U
+�^f%�^���u;zz}0�X	
+�S0ewyk<�%	�O����	��z��{����|������%����F�i�10�����˼Y����8�x����	z��@���<ݫ � ������ ���8��Y<���ɥ8�\�P$���!��  !�	
+   ,         ��I����gEU�� ՠR�a�TB٤�p>'���e�$��"�\�#E1Cn�Ď��~�� J,�,Aa���Uw^4I%P��uQ33{0�i1T�Ggwy}%�%'R����	���=���������3��G�%��p��0�
+��JRo�5Ȇ0IĦmyk��x�T�_}�(� ��^��yK��s���>i_�%���n�=����q�4e�-M¤D  !�	
+   ,         ��I)*���')E�d]����PR	A�:!��zr����bw�%6�"G�(d$["���J��Fh��aQP�`p%/BFP\cU�?T�tW/pG&OtDa_sylD'M����q	�tc�������b��2��D��M:�����d��%��4%s)���u��E3�� YU�� tږ���D�$�JiM�<�Y�;�ذ��d<� O�tX�<q'+B  !�	
+   ,         ��IiR��ͧ"J% �����EQZ�����Ld���-Y��
+�h��k�Q�|��5�u�4Y�I���NbW���u��5�
+��r��	�%yb>^%o/rvl9'L����;��9�����������9�%��i9���� C�"�BB��Ds��^Xf}$P	�{L�?P ���O4 ���E��咛V�$���d J�#)�pV��$ !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K����w}?�����K��iz6��:x�KAC���&}9�tz\\���D5;x���Q�d(� 	��KW���MB���I��ڈM=�ˤs�⸽8Da��J`@LG !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gziz6��8}z����~��%X�K9�:���0}�%	�tz\B��lcL�bQ��� 	������ǉ�� �ųK����ň������x�(țP��X,��ւ|/"  !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gziz6��8}z����~��%�:�A/C}���u\��h}b��D��]=���� 	��V)��
+ڊ����9C���D�K�� ���K���u�	��*00�S�tD  !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gz���z5
+���������C�:	�A/C}���u\��Eh}b��6 �[=����� Wx&)���I9�Ԭ �@oC��T?K����d���]��B7�� ��6ЫD !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�ƀ��H��03���hո��a��j U{CIkmbK#�cK���8	�{a��8�n��������V�:�/q:M�
+��Cu�~ ���Eh�k��6 	� [_���6P</U�YHF��9?M�%
+�G���C�k� v���>.]�6��!�)V�  !�	
+   ,         ��IiR��ͧ"J�d]U�R�ZN	��J�j�N2sK6�
+��d�I��)
+L�H�W�G6	�KX��젱�.6�d��~z�h��uur/6 X5�I;_�tO#E	{O���9V����9��4��������;V�C/
+��6�Ø~*�'��Mo����n��bX�:~]+V*�m�K_�O�rK �N@. ��d� ~�qЦ��D�B֋5D  ;         
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+�PNG
+
+   IHDR   P   P   ��   tEXtSoftware Adobe ImageReadyq�e<   iTXtXML:com.adobe.xmp     <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CS5 Windows" xmpMM:InstanceID="xmp.iid:55E340E9C0B011E381DBA90C92EF1313" xmpMM:DocumentID="xmp.did:55E340EAC0B011E381DBA90C92EF1313"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:55E340E7C0B011E381DBA90C92EF1313" stRef:documentID="xmp.did:55E340E8C0B011E381DBA90C92EF1313"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>���  �IDATx��\	TT�~�f�A`�@��X#*�5�`��I�ؚ����]ck��'i�T�FcL1�ъ�!j�h"DED@�QYe���������0̎���+�[��������v����"#�H$�0�455�)�Px
+����P�C�0�]{ukkk�|�N�	��i4��ɓ'״�1K�nx��i/ �޽���"�J�B��Y�ZZZr���i�ڴ���l��f
+���X���}cU�׏�ɽ���V�n���ܜSYY�NBBB?"kl|[�E �mkw`��+���bO�>=�*�8Κ Z���1,˾l���{ ��555j�_�rrr򲳳KΜ9S���YO�z�W�^�3�BBB����6l����� �����_[]]��i�>�~���ۜR�@�xk�(�
+ �ן�9m߾}y'O�� Xb����������%*@9TŊ+###Ǐ9�������	�����~~~_���N!��&x���REE�Ŕ��O&M�4^	�:�P�BU�B0ٌb9@�TVo����Z�j�J������Xl<���̜9��p,�`N��[�T[�n�<6	�(2A�c�RB�T�����;k֬1 b��K��"�zaa�R|�u� ^�������>�G&C}��77Xk�f����Λ7ol~~~<����X
+
+>���@xG	,�*4����o��ß��� ��FV��809 }v���<(��Bc.--�Gʕ��;w� x?Ѓ��U;v�X�LD����� �ǎp���/����I���6����Dw&B����_D1����N����퓞��'P|��<����uDS��d ���̄	�E%�T'q&������Q�5��|������ x)tgׯ_?����[��Ԯrg���^���� ����Z��C.b� h�8�0�=<<�����-�a���	�� k!|�[��.\���Pj� v ���컬���p{�'�I�Q ��G�,��6�`�kBCC��2@T�(�|����H��=���((n�n�ϵ��� �&�Y ���7�����o��ׯ��Ǜ�A&`��ܖ��EL3OQVH����q���c�!� bXXXﺺ���9W8nZ����o����\~�c��K,>P�)�;h0q�=��ȟ;qEYY@h`�Կ��Q�y��ق����~CS' �9(�X������h��%F��r��|��*�*	Y���k ���������h�#�>�x�ڵk}t:�U�
+w���B�(�@}��_����ӧO'�	}K�����w�A�H5�"Z����M ���l������0Ժ��.*�
+ 7N�w$''?f/�R�̝;��0����1p+�i��w�9s��D���@��K�^�G4�HaAq�AqI	\�!2A ?�|��p��P�1�\���?�S�����={������H���7��X�E�Nщ-[��@_���c I�1�***>ۼy� [�u��0�?�V��!;E' ��O�ki```����.�[
+ o���8p�� d���"� ����(��ܷ�$���7o�<�V�o��H�8:�G�P��L�}�vrzzz(�W&�xM��r�ԩ����k.�{_R�Q޻w/����fM��a_~݂�,U2��������?|��hJ��ܨ��ϟ�{�ug��f��8��єRSS�&���.����c���������`L�:�����'555��ДRRR28���iTTT8�Ұ�� �M�>$ݢ��4g(�>}���r�mB Ykv r� �Rÿ6u�Tb�p��o���+���t��2Y��������rk)�5k�T vp�С�"aQ�߬��,�%������6y̘1G`��޽��fq�����[�-�_���}�`?�k��ژX�����:{���7n�X�]�@�e��#H|PƱ�'��H}=:���eА!C��Kx ##c�%�#qB��]]]k��
+*}�Sm�CP<<<fN�81\��@�9J�����]R�@�z���S�@re��#��ϲl3��`2q�uRr�A6> �cNN΁Y�f�T�s�E�*Ed�V�����T*��bї�T@��رc�ʕ+��k�9�=������Z�M///%�#AϪ��=111��)�"p$0B�,�2̀e}����$���H���������{xj����ŋ�N�6-�#��T�9�R���UUU��V�c��{7���G ٞ�^7��ݶdɒ��7
+U���ok0S����ĿVZZZv@ �|�Moo�A�rz abM�ΝۿhѢݗ/_�@v% �j��9��t:?�);mM��ʺi��H����èhtYHHH(uu�hLQQ���˗/�u��{w7bmJ}�\�$����CL�4�q�F���駟��I�����R�@�O��ছ9k&&ڐ�������t$����l|��PZZZ#��@ [[[�/^��?""��0�P�SCL��c�q|���$"=��7�Hee�*��\e%�@�igݺu�A�㙎,	��0AD�G���2eʔ����q�5���D-��͛7/�+9hk ɦ�#G��S&���0����4R{�ʁ���h{~��%�kD
+l|����'�2")v �-??���ٳIfD(~q/�ʋ�& �J-��C�E��Y�Z���Ԧ�L�n#�=,Yԟ��r�{16H���|	�m�m��ՋP�� 2��GSڸ->>�%�c߄�3��P^[������~E����P(�{?�}�J5"�}�J�>�rGnK O-[��e���J�Ol��&V�����~��1:th~��E�	���/���e۶m1H	kB�011�C�M�6�]�-�
+�L�Pʃ��<��HhD��ڈ�!F���ʕ+	������hk�t�7T�P
+u��O'W���L C�m��U2T5�LǮ� �#�[�8fK��}CS�R������$P 0S���eK�.M7`��h�x0��$`�D��s���H}�XD d����ؙy�B� �v�;�6�:��ݨL��� A�̈ ����AT�Tk�Ν�e��_"�?..�F`{�) 
+q������V�jjJ�� ��bIOO�G�MԌ�2�����!�xu�R�]�"'�\m*�0����44[�2BlLа�TPP���	7�o�>�qЁ֪�4撔H:`�����hf�FS�ZOa:v2n Q����dO�#�iZ(w�i���o����r�Ġ"�J0��
+��V�"����؁A)))�m�c������� b�@��Q�V�ٞ.��ƻ]�Ç����X@����x�3��6l�0�q�# �[����rK�}�I<��Qx�O22c�� "h���@�x-77��r�D�����G90h<�j�;��eS�'x+�uY! kkk�Ϟ=;�q�^`T��e���`�D�r"�����7˦M�"���ϊ��5�I���dg Y �y�'Ţޗ.]J�񄣗q�� s�,Y�gQ� %���~7�h�)�Ǥ�$o[)`�� �����[R���?axJnv�2$H]^���/�"9ml�&X`~~�YYY��)��tà�E Z
+|����&T��XԴ��Ɵ��� ŴYB��333_>|�KJ�2����Z����P���%�&d�h-PS˲zh�].���8PJ�RB�~�7�G�3AL��\�v�(h�C���^���|�5� 8!��?����B�"�⾍��}5,Y.x��?Z#�j ��"U�����J��
+ح����4�cǎ�;&&�\���)�֔-�_�ba��D�&�;�\O�5j\ppp����`k��i�ګ���K�ѣGU`�1��ٔl�Ջ������qo��&��n���~QQQ�à������uuu�Kd�L&s�Lxb����z��d#XM�%���ϫw��U��h��F����#���Z���Y^��?����~+&��`m�U�ݶi8@![�;X���f%��S@r�a�Z�'� ���୬��    IEND�B`�
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+background: rgb(20, 20, 20);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row{
+background: rgb(26, 26, 26);
+border-radius: 30px;
+box-shadow: 12px 12px 22px #da9323;
+}
+
+img{
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+
+.btn1{
+border: none;
+outline: none;
+height: 50px;
+width: 100%;
+background-color: #EBC638;
+color: black;
+border-radius: 4px;
+font-weight: bold;
+}
+
+.btn1:hover{
+transition: 0.5s;
+transform: scale(1.1);
+background-color: #ff9900;
+}
+
+.btn1:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+.btn1:focus {
+background-color: #918d7e;
+transition: 0.5s;
+transform: scale(1.5);
+border: 0;
+outline: 0;
+}
+
+input#inputp {
+color: white;
+padding-left: 20px;
+margin-top: 20px;
+float: center;
+width: 100%;
+height: 45px;
+background-color: rgb(20, 20, 20);
+border: 0;
+border-radius: 5px;
+}
+input#inputp:hover{
+transition: 0.5s;
+transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+transition: 0.5s;
+transform: scale(1.0);
+}
+
+input#inputp:focus{
+outline: 0;
+padding-left: 30px;
+transform: scale(1.1);
+border: 2px solid #EBC638;
+}
+
+/* MIN WIDTH */
+@media (min-width: 992px) {
+  #header .nav-link {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+/* MAX MEDIUM */
+@media (max-width: 991.98px) {
+  #header .navbar-brand img {
+    max-width: 180px;
+  }
+  #header .navbar-collapse {
+    width: 100%;
+  }
+  #contato .email img {
+    width: 90px;
+    top: -40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #servicos a.destaque .img-container {
+    height: 120px;
+  }
+  #servicos a.destaque .img-container img {
+    max-height: 120px;
+  }
+  #clientes .cliente-texto .imagem {
+    padding: 10px 0 30px 0;
+  }
+
+  #clientes .cliente-texto .imagem img {
+    max-width: 150px;
+  }
+
+  #contato .email {
+    padding: 60px 30px 50px 30px;
+  }
+  #contato .email form {
+    width: 100%;
+    flex-direction: column;
+  }
+  #contato ul {
+    padding-top: 30px;
+    justify-content: center;
+  }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundPI{
+    width: 100%;
+	height: 650px;
+	background: url(/assets/backgroundPI.jpg) no-repeat center center;
+	background-size: cover;
+    background-position: center;
+}
+.nav-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #EBC638;
+    transition: width .3s;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/*
+#slider {
+    width: 80%;
+    max-width: 500px;
+    height: 25vw;
+    max-height: 150px;
+
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+
+    position: absolute;
+
+    max-width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+.btn-menuu{
+    background-image: url('/assets/menu-suspenso.png');
+}
+*/
+
+GIF89a    �  �����������������լ�������������⢢����         !�NETSCAPE2.0   !�Created with ajaxload.info !�	
+   ,         ��Iia����bK�$�F�RA�T�,�2S�*05//�m�p!z���0;$�0C�.I*!�HC(A@o�!39T5�\�8)���`�dwxG=Y
+g�wHb�vA=�0	V\�\�;	����;���H��������0��t%�Hs��rY<H.�ŉ��	��b�Zb�OEg:�GY].�=�A�OQ�s�� �\b�h.9�=sg��c��e��*�ֆf 7D  !�	
+   ,         ��IiY��ͧYF5�F�ԢRÔTbG�J����L��d��&�Ymx莔� \@����� �1�&R���H
+41Q��|V%zv#j0�
+�l�Gg{0~�<�<	�[�[�h�x��G�
+y���������[�0���G����P�z��hɾ�Ękz�i��y����h|z�h�G݄�VŢ��� ���\h�[��� Ǥ���&�+��W�7�8��! !�	
+   ,         ��I)1����1G5d]�(��Rǲ�T2��jL�{��< [�5�M��
+0�)�
+ L��I��m��E��`�p�U
+�^f%�^���u;zz}0�X	
+�S0ewyk<�%	�O����	��z��{����|������%����F�i�10�����˼Y����8�x����	z��@���<ݫ � ������ ���8��Y<���ɥ8�\�P$���!��  !�	
+   ,         ��I����gEU�� ՠR�a�TB٤�p>'���e�$��"�\�#E1Cn�Ď��~�� J,�,Aa���Uw^4I%P��uQ33{0�i1T�Ggwy}%�%'R����	���=���������3��G�%��p��0�
+��JRo�5Ȇ0IĦmyk��x�T�_}�(� ��^��yK��s���>i_�%���n�=����q�4e�-M¤D  !�	
+   ,         ��I)*���')E�d]����PR	A�:!��zr����bw�%6�"G�(d$["���J��Fh��aQP�`p%/BFP\cU�?T�tW/pG&OtDa_sylD'M����q	�tc�������b��2��D��M:�����d��%��4%s)���u��E3�� YU�� tږ���D�$�JiM�<�Y�;�ذ��d<� O�tX�<q'+B  !�	
+   ,         ��IiR��ͧ"J% �����EQZ�����Ld���-Y��
+�h��k�Q�|��5�u�4Y�I���NbW���u��5�
+��r��	�%yb>^%o/rvl9'L����;��9�����������9�%��i9���� C�"�BB��Ds��^Xf}$P	�{L�?P ���O4 ���E��咛V�$���d J�#)�pV��$ !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K����w}?�����K��iz6��:x�KAC���&}9�tz\\���D5;x���Q�d(� 	��KW���MB���I��ڈM=�ˤs�⸽8Da��J`@LG !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gziz6��8}z����~��%X�K9�:���0}�%	�tz\B��lcL�bQ��� 	������ǉ�� �ųK����ň������x�(țP��X,��ւ|/"  !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gziz6��8}z����~��%�:�A/C}���u\��h}b��D��]=���� 	��V)��
+ڊ����9C���D�K�� ���K���u�	��*00�S�tD  !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�b
+�����H��8	B�;	��"'��Z��t��b�K#C'K��Gz���z5
+���������C�:	�A/C}���u\��Eh}b��6 �[=����� Wx&)���I9�Ԭ �@oC��T?K����d���]��B7�� ��6ЫD !�	
+   ,         ��IiR��ͧ"J�d]� �R�ZN�*P*��;�$P{*�N���\EА�!1UO2�D	�_r6I�ƀ��H��03���hո��a��j U{CIkmbK#�cK���8	�{a��8�n��������V�:�/q:M�
+��Cu�~ ���Eh�k��6 	� [_���6P</U�YHF��9?M�%
+�G���C�k� v���>.]�6��!�)V�  !�	
+   ,         ��IiR��ͧ"J�d]U�R�ZN	��J�j�N2sK6�
+��d�I��)
+L�H�W�G6	�KX��젱�.6�d��~z�h��uur/6 X5�I;_�tO#E	{O���9V����9��4��������;V�C/
+��6�Ø~*�'��Mo����n��bX�:~]+V*�m�K_�O�rK �N@. ��d� ~�qЦ��D�B֋5D  ;         
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+�PNG
+
+   IHDR   P   P   ��   tEXtSoftware Adobe ImageReadyq�e<   iTXtXML:com.adobe.xmp     <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c060 61.134777, 2010/02/12-17:32:00        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CS5 Windows" xmpMM:InstanceID="xmp.iid:55E340E9C0B011E381DBA90C92EF1313" xmpMM:DocumentID="xmp.did:55E340EAC0B011E381DBA90C92EF1313"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:55E340E7C0B011E381DBA90C92EF1313" stRef:documentID="xmp.did:55E340E8C0B011E381DBA90C92EF1313"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>���  �IDATx��\	TT�~�f�A`�@��X#*�5�`��I�ؚ����]ck��'i�T�FcL1�ъ�!j�h"DED@�QYe���������0̎���+�[��������v����"#�H$�0�455�)�Px
+����P�C�0�]{ukkk�|�N�	��i4��ɓ'״�1K�nx��i/ �޽���"�J�B��Y�ZZZr���i�ڴ���l��f
+���X���}cU�׏�ɽ���V�n���ܜSYY�NBBB?"kl|[�E �mkw`��+���bO�>=�*�8Κ Z���1,˾l���{ ��555j�_�rrr򲳳KΜ9S���YO�z�W�^�3�BBB����6l����� �����_[]]��i�>�~���ۜR�@�xk�(�
+ �ן�9m߾}y'O�� Xb����������%*@9TŊ+###Ǐ9�������	�����~~~_���N!��&x���REE�Ŕ��O&M�4^	�:�P�BU�B0ٌb9@�TVo����Z�j�J������Xl<���̜9��p,�`N��[�T[�n�<6	�(2A�c�RB�T�����;k֬1 b��K��"�zaa�R|�u� ^�������>�G&C}��77Xk�f����Λ7ol~~~<����X
+
+>���@xG	,�*4����o��ß��� ��FV��809 }v���<(��Bc.--�Gʕ��;w� x?Ѓ��U;v�X�LD����� �ǎp���/����I���6����Dw&B����_D1����N����퓞��'P|��<����uDS��d ���̄	�E%�T'q&������Q�5��|������ x)tgׯ_?����[��Ԯrg���^���� ����Z��C.b� h�8�0�=<<�����-�a���	�� k!|�[��.\���Pj� v ���컬���p{�'�I�Q ��G�,��6�`�kBCC��2@T�(�|����H��=���((n�n�ϵ��� �&�Y ���7�����o��ׯ��Ǜ�A&`��ܖ��EL3OQVH����q���c�!� bXXXﺺ���9W8nZ����o����\~�c��K,>P�)�;h0q�=��ȟ;qEYY@h`�Կ��Q�y��ق����~CS' �9(�X������h��%F��r��|��*�*	Y���k ���������h�#�>�x�ڵk}t:�U�
+w���B�(�@}��_����ӧO'�	}K�����w�A�H5�"Z����M ���l������0Ժ��.*�
+ 7N�w$''?f/�R�̝;��0����1p+�i��w�9s��D���@��K�^�G4�HaAq�AqI	\�!2A ?�|��p��P�1�\���?�S�����={������H���7��X�E�Nщ-[��@_���c I�1�***>ۼy� [�u��0�?�V��!;E' ��O�ki```����.�[
+ o���8p�� d���"� ����(��ܷ�$���7o�<�V�o��H�8:�G�P��L�}�vrzzz(�W&�xM��r�ԩ����k.�{_R�Q޻w/����fM��a_~݂�,U2��������?|��hJ��ܨ��ϟ�{�ug��f��8��єRSS�&���.����c���������`L�:�����'555��ДRRR28���iTTT8�Ұ�� �M�>$ݢ��4g(�>}���r�mB Ykv r� �Rÿ6u�Tb�p��o���+���t��2Y��������rk)�5k�T vp�С�"aQ�߬��,�%������6y̘1G`��޽��fq�����[�-�_���}�`?�k��ژX�����:{���7n�X�]�@�e��#H|PƱ�'��H}=:���eА!C��Kx ##c�%�#qB��]]]k��
+*}�Sm�CP<<<fN�81\��@�9J�����]R�@�z���S�@re��#��ϲl3��`2q�uRr�A6> �cNN΁Y�f�T�s�E�*Ed�V�����T*��bї�T@��رc�ʕ+��k�9�=������Z�M///%�#AϪ��=111��)�"p$0B�,�2̀e}����$���H���������{xj����ŋ�N�6-�#��T�9�R���UUU��V�c��{7���G ٞ�^7��ݶdɒ��7
+U���ok0S����ĿVZZZv@ �|�Moo�A�rz abM�ΝۿhѢݗ/_�@v% �j��9��t:?�);mM��ʺi��H����èhtYHHH(uu�hLQQ���˗/�u��{w7bmJ}�\�$����CL�4�q�F���駟��I�����R�@�O��ছ9k&&ڐ�������t$����l|��PZZZ#��@ [[[�/^��?""��0�P�SCL��c�q|���$"=��7�Hee�*��\e%�@�igݺu�A�㙎,	��0AD�G���2eʔ����q�5���D-��͛7/�+9hk ɦ�#G��S&���0����4R{�ʁ���h{~��%�kD
+l|����'�2")v �-??���ٳIfD(~q/�ʋ�& �J-��C�E��Y�Z���Ԧ�L�n#�=,Yԟ��r�{16H���|	�m�m��ՋP�� 2��GSڸ->>�%�c߄�3��P^[������~E����P(�{?�}�J5"�}�J�>�rGnK O-[��e���J�Ol��&V�����~��1:th~��E�	���/���e۶m1H	kB�011�C�M�6�]�-�
+�L�Pʃ��<��HhD��ڈ�!F���ʕ+	������hk�t�7T�P
+u��O'W���L C�m��U2T5�LǮ� �#�[�8fK��}CS�R������$P 0S���eK�.M7`��h�x0��$`�D��s���H}�XD d����ؙy�B� �v�;�6�:��ݨL��� A�̈ ����AT�Tk�Ν�e��_"�?..�F`{�) 
+q������V�jjJ�� ��bIOO�G�MԌ�2�����!�xu�R�]�"'�\m*�0����44[�2BlLа�TPP���	7�o�>�qЁ֪�4撔H:`�����hf�FS�ZOa:v2n Q����dO�#�iZ(w�i���o����r�Ġ"�J0��
+��V�"����؁A)))�m�c������� b�@��Q�V�ٞ.��ƻ]�Ç����X@����x�3��6l�0�q�# �[����rK�}�I<��Qx�O22c�� "h���@�x-77��r�D�����G90h<�j�;��eS�'x+�uY! kkk�Ϟ=;�q�^`T��e���`�D�r"�����7˦M�"���ϊ��5�I���dg Y �y�'Ţޗ.]J�񄣗q�� s�,Y�gQ� %���~7�h�)�Ǥ�$o[)`�� �����[R���?axJnv�2$H]^���/�"9ml�&X`~~�YYY��)��tà�E Z
+|����&T��XԴ��Ɵ��� ŴYB��333_>|�KJ�2����Z����P���%�&d�h-PS˲zh�].���8PJ�RB�~�7�G�3AL��\�v�(h�C���^���|�5� 8!��?����B�"�⾍��}5,Y.x��?Z#�j ��"U�����J��
+ح����4�cǎ�;&&�\���)�֔-�_�ba��D�&�;�\O�5j\ppp����`k��i�ګ���K�ѣGU`�1��ٔl�Ջ������qo��&��n���~QQQ�à������uuu�Kd�L&s�Lxb����z��d#XM�%���ϫw��U��h��F����#���Z���Y^��?����~+&��`m�U�ݶi8@![�;X���f%��S@r�a�Z�'� ���୬��    IEND�B`�

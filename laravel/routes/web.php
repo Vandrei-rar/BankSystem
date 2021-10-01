@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/abrirconta', function() {
+    return view('site.abrasuaconta');
+})->name('abrirconta');
+
+Route::get('/', function(){
+    return view('site.index');
+})->name('index'); //Não usado no momento
+
+Route::get('/login', function(){
+    return view('site.login');
+})->name('login');
+
+Route::get('/recuperarsenha', function(){
+    return view('site.recuperarsenha');
+})->name('recuperarsenha');

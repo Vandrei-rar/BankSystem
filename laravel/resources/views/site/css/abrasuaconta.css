@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    border: 0;
+}
+
+@media (max-width:1000px){
+    div#elemento2 {
+        display: none;
+        visibility: hidden;
+    }
+    body{
+        height: 300px;
+    }
+}
+
+
+
+
+/* Logo */
+
+.logo{
+    cursor: pointer;
+}
+
+/* --------- */
+
+/* Escritas NavBar 
+
+.home::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #EBC638;
+    transition: width .3s;
+}
+
+.home:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Cabeçalho 
+
+
+.banner{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #ffff;
+}
+ /* -------- */
+body {
+    background-image: url(./image/fundo\ galaxy.jpg);
+    width: 100%;
+    height: 10%;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    animation-name: moveToLeft;
+    animation-duration: 2.0s;
+}
+
+div#elemento { 
+    overflow: hidden;
+    padding: 50px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: rgb(14, 14, 14);
+}
+
+div#elemento2 {
+    overflow: hidden;
+    padding: 100px;
+    margin-top: 10%;
+    display: inline-block;
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: #da9323;
+}
+
+h3#crie{
+    margin-top: 20px;
+    text-align: left;
+}
+
+input#inputp {
+    color: white;
+    padding-left: 20px;
+    margin-top: 20px;
+    float: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(20, 20, 20);
+    border: 0;
+    border-radius: 5px;
+}
+
+input#inputp:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+input#inputp:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+input#inputp:focus{
+    outline: 0;
+    padding-left: 30px;
+    transform: scale(1.1);
+    border: 2px solid #EBC638;
+}
+
+
+button {
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: #EBC638;
+    border: 0;
+    border-radius: 5px;
+}
+
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    background-color: #ff9900;
+}
+
+button:not(:hover){
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+button:focus {
+    background-color: #918d7e;
+    transition: 0.5s;
+    transform: scale(1.2);
+    border: 0;
+    outline: 0;
+}
+
+.center {
+    margin-top: 160px;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
