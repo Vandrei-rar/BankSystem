@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/abrirconta', function() {
+    return view('site.abrasuaconta');
+})->name('abrirconta');
+
+Route::get('/', function(){
+    return view('site.index');
+})->name('index');
