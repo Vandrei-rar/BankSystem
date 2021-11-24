@@ -29,9 +29,10 @@
             <input type="text" id="inputp" placeholder="RG">
             <input type="text" id="inputp" placeholder="Endereço">
             <input type="password" id="inputp" placeholder="Senha">
+            <br><br><br>
             <a href="#">
             <button id="cadastro"><span style="color: black;">Abrir conta</span></button></a>
-            <a href="{{ route('login') }}">
+            <a href="{{route('form_login')}}">
             <button id="cadastro"><span style="color: black;">Voltar para o login</span></button></a>
             <p id="sucesso"></p>
         </div>

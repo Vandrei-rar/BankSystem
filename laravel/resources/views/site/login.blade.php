@@ -26,35 +26,40 @@
 
     <section class="Form my-4 mx-5">
         <div class="container">
-            <div class="row  no-gutters">
-                <div class="col-lg-5">
-                    <img src="/laravel/public/assets/CELULARLOGIN.png" class="img-fluid" alt="">
+                <div class="row  no-gutters">
+                    <div class="col-lg-5">
+                        <img src="/laravel/public/assets/CELULARLOGIN.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-7 px-5 pt-5">
+                        <h1 class="font-weight-bold py-3" style="color: white;">DOGEBANK</h1>
+                        <h4 style="color: white;">Faça login em sua conta</h4>
+                        <form action="{{route('authUser')}}" method="post">
+                        @if ($errors->any())
+                            <p style="color: red;">{{$errors->first()}}</p>
+                         @endif
+
+                         @csrf
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <input type="text" name="id_conta" id="inputp" placeholder="Número da Conta" class="my-3 p-4" >
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <input type="password" name="password" id="inputp" placeholder="Senha" class="my-3 p-4">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <button type="submit" class="btn1 mt-3 mb-4">Entrar</button>
+                                </div>
+                            </div>
+                            <a href="{{ route('recuperarsenha') }}">Esqueceu sua senha</a>
+                            <p style="color: rgb(141, 141, 141);">Não tem uma conta?
+                            <a href="{{ route('abrirconta') }}">Abra sua conta aqui</a></p>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-lg-7 px-5 pt-5">
-                    <h1 class="font-weight-bold py-3" style="color: white;">DOGEBANK</h1>
-                    <h4 style="color: white;">Faça login em sua conta</h4>
-                    <form>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input type="email" id="inputp" placeholder="Endereço de E-mail" class="my-3 p-4" >
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input type="password" id="inputp" placeholder="Senha" class="my-3 p-4">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <button type="button"  class="btn1 mt-3 mb-4">Entrar</button>
-                            </div>
-                        </div>
-                        <a href="{{ route('recuperarsenha') }}">Esqueceu sua senha</a>
-                        <p style="color: rgb(141, 141, 141);">Não tem uma conta?
-                        <a href="{{ route('abrirconta') }}">Abra sua conta aqui</a></p>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
 <!--Fim Login-->
