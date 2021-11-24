@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mapBox{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: black;
+    display: flex;
+    margin: 0 0 100px;
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
