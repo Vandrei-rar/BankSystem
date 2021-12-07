@@ -22,56 +22,7 @@
     cursor: pointer;
 }
 
-/* --------- */
 
-/* Escritas NavBar 
-
-.home::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #EBC638;
-    transition: width .3s;
-}
-
-.home:hover::after{
-    width: 100%;
-    transition: width .3s;
-}
-
-/* Cabeçalho 
-
-
-.banner{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.navbar{
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    font-size: 12px;
-    cursor: pointer;
-    color: #ffff;
-}
- /* -------- */
 body {
     background-image: url(./image/fundo\ galaxy.jpg);
     width: 100%;
@@ -88,21 +39,21 @@ div#elemento {
     margin-top: 10%;
     display: inline-block;
     width: 500px;
-    height: 700px;
+    height: 800px;
     border-radius: 20px;
     background-color: rgb(14, 14, 14);
 }
 
-div#elemento2 {
+/* div#elemento2 {
     overflow: hidden;
     padding: 100px;
     margin-top: 10%;
     display: inline-block;
     width: 400px;
-    height: 700px;
+    height: 850px !important;
     border-radius: 20px;
     background-color: #da9323;
-}
+} */
 
 h3#crie{
     margin-top: 20px;

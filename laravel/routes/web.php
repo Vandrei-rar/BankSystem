@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ClienteController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/abrirconta', function() {
+Route::get('/abrirconta', function () {
     return view('site.abrasuaconta');
 })->name('abrirconta');
 
-Route::get('/', function(){
+Route::get('/', function () {
     return view('site.index');
 })->name('index'); //Não usado no momento
 
@@ -30,12 +30,14 @@ Route::get('/', function(){
 
 
 // Chamando o formulário de login.
-Route::get('/login',
+Route::get(
+    '/login',
     [AuthController::class, 'formlogin']
 )->name('form_login');
 
 // Chamando o método de autenticação do usuário.
-Route::post('/login', 
+Route::post(
+    '/login',
     [AuthController::class, 'authUser']
 )->name('authUser');
 
@@ -51,7 +53,7 @@ Route::get(
 )->name('logout')->middleware('auth.confirm');
 
 // Form de recuperar senha.
-Route::get('/recuperarsenha', function(){
+Route::get('/recuperarsenha', function () {
     return view('site.recuperarsenha');
 })->name('recuperarsenha');
 
@@ -79,3 +81,13 @@ Route::get('/transferencia', function () {
 Route::get('/dadosconta', function () {
     return view('site.dashboard.dadosdaconta');
 })->name('dash-dadosconta');
+
+
+
+
+/*Criando CRUD
+Route::get('/cadastro', 'ClienteController@create');*/
+Route::post(
+    '/cadastrocliente',
+    [ClienteController::class, 'store']
+)->name('store');
