@@ -58,17 +58,30 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" style="color: #fff;" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-user" style="color: #fff;"></i> Conta Teste
+                                <i class="fa fa-user" style="color: #fff;"></i> {{Auth::user()->cliente_nome_completo}}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                <li><a class="dropdown-item" href="#">Dogebank Plus</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </nav>
+
+            <div>
+                <div class="text-center" style="margin-top: -7%;">
+                    <div class="container-xl" id="elemento">
+                        <h4 id="crie" style="color: white;">Insira os Dados para Transferir</h4>
+                        <input type="text" id="inputp" placeholder="Número conta de destino">
+                        <input type="text" id="inputp" placeholder="Valor">
+                        <input type="text" id="inputp" placeholder="Sua senha">
+                        <input type="text" id="inputp"  placeholder="Mensagem opcional">
+                        <button><span style="color: black;">Transferir</span></button></a>  
+                        <a href="#">
+                    </div>
+                </div>
+            </div>
     <!-- /#page-content-wrapper -->
     </div>
 

@@ -15,10 +15,10 @@ const mix = require('laravel-mix');
     'resources/views/site/css/owl'
     ], 'public/site/css/estilo.css')
 
-    // .scripts([
-    //     'resources/views/site/js',
-    //     'resources/views/site/js/magnify'
-    // ], 'public/site/js/script.js')
+     .scripts([
+         'resources/views/site/js',
+        'resources/views/site/js/magnify'
+     ], 'public/site/js/script.js')
 
     .styles(['resources/views/site/css/dashboard'],
     'public/site/css/dashboard.css')

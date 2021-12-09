@@ -29,16 +29,16 @@
                 <input name="cliente_nome_completo" type="text" id="inputp" placeholder="Nome Completo">
                 <input name="cliente_cpf" type="text" id="inputp" placeholder="CPF">
                 <input name="cliente_rg" type="text" id="inputp" placeholder="RG">
-                <input type="date" id="inputp" name="birthday">
+                <input name="data_nasc" type="date" id="inputp">
                 <input name="email" type="email" id="inputp" placeholder="E-mail">
                 <input name="cliente_endereco" type="text" id="inputp" placeholder="Endereço">
                 <input name="password" type="password" id="inputp" placeholder="Senha">
                 <input name="confirm_pass" type="password" id="inputp" placeholder="Confirme a senha">
                 <br><br>
                 <a href="#">
-                    <button id="cadastro" style="color: black; margin: 10px; border-radius: 10px;"><span>Abrir conta</span></button></a>
+                    <button type="submit" id="cadastro" style="color: black; margin: 10px; border-radius: 10px;"><span>Abrir conta</span></button></a>
                 <a href="{{route('form_login')}}">
-                    <button id="cadastro" style="color: black; border-radius: 10px;"><span style="color: black;">Voltar para o login</span></button></a>
+                    <button type="button" id="cadastro" style="color: black; border-radius: 10px;"><span style="color: black;">Voltar para o login</span></button></a>
                 <p id="sucesso"></p>
             </div>
 

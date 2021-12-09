@@ -24,6 +24,7 @@ class User extends Authenticatable
         'cliente_cpf',
         'cliente_rg',
         'cliente_endereco',
+        'data_nasc'
     ];
 
     /**
