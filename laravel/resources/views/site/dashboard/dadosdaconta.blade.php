@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/telas.css">
     <link rel="shortcut icon" href="/BankSystem/laravel/public/assets/DogeLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="/BankSystem/laravel/public/site/css/dashboard.css" />
     <title>Painel do Cliente - Dados da Conta</title>
@@ -58,12 +59,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle second-text fw-bold" style="color: #fff;" href="#" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-user" style="color: #fff;"></i> Conta Teste
+                                <i class="fa fa-user" style="color: #fff;"></i> {{Auth::user()->cliente_nome_completo}}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                <li><a class="dropdown-item" href="#">Dogebank Plus</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -115,7 +115,7 @@
         </button>
       </h2>
       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Vandrei Gay</div>
+        <div class="accordion-body"><p>{{Auth::user()->cliente_nome_completo}}</p></div>
       </div>
     </div>
     <div class="accordion-item">
@@ -125,7 +125,7 @@
         </button>
       </h2>
       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">12345678910</div>
+        <div class="accordion-body"><p>{{Auth::user()->cliente_cpf}}</p></div>
       </div>
     </div>
     <div class="accordion-item">
@@ -135,7 +135,7 @@
         </button>
       </h2>
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">18/01/2002</div>
+        <div class="accordion-body"><p>{{Auth::user()->data_nasc}}</p></div>
       </div>
     </div>
   </div>

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/css/magnific-popup.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/style.css"/> -->
-    <link rel="sortcut icon" href="/laravel/public/assets/DogeLogo.png"/>
+    <link rel="sortcut icon" href="/BankSystem/laravel/public/assets/DogeLogo.png"/>
     <!-- <link rel="stylesheet" href="/css/footer.css"/>
     <link rel="stylesheet" href="/css/googlemaps.css"/> -->
-    <link rel="stylesheet" href="/laravel/public/site/css/estilo.css">
+    <link rel="stylesheet" href="/BankSystem/laravel/public/site/css/estilo.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -28,7 +28,7 @@
           class="navbar navbar-expand-lg navbar-light justify-content-between"
         >
           <a class="navbar-brand" href="#">
-            <img src="/laravel/public/assets/LOGO_DOGE.png" class="img-fluid" />
+            <img src="/BankSystem/laravel/public/assets/LOGO_DOGE.png" class="img-fluid" />
           </a>
           <button
             class="navbar-toggler"

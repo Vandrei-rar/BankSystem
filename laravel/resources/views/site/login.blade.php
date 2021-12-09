@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/laravel/public/site/css/estilo.css">
-    <link rel="sortcut icon" href="/assets/DogeLogo.png">
+    <link rel="stylesheet" href="/BankSystem/laravel/public/site/css/estilo.css">
+    <link rel="sortcut icon" href="/BankSystem/assets/DogeLogo.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -16,7 +16,7 @@
         <div class="navbar">
             <div class="container">
                 <div style="display: flex; flex-direction: row;">
-                    <a href="./index.html"><img src="/laravel/public/assets/LOGO_DOGE.png" class="logo"></a>
+                    <a href="./index.html"><img src="/BankSystem/laravel/public/assets/LOGO_DOGE.png" class="logo"></a>
                 </div>
             </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="container">
                 <div class="row  no-gutters">
                     <div class="col-lg-5">
-                        <img src="/laravel/public/assets/CELULARLOGIN.png" class="img-fluid" alt="">
+                        <img src="/BankSystem/laravel/public/assets/CELULARLOGIN.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-7 px-5 pt-5">
                         <h1 class="font-weight-bold py-3" style="color: white;">DOGEBANK</h1>
